@@ -23,7 +23,7 @@ function checkSlide(e) {
     sliderImages.forEach(sliderImage => {
         //window.scrollY gives you the pixel point on the Y axis; we have to add window.innerHeight to get the real pixel point 
         // the second part searches for the point when we're half-way down the image
-        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 30;
         
         //next lines find the bottom of the image: offsetTop gives us position of image from the top; we add the image's height to get to the bottom
         const imageBottom = sliderImage.offsetTop + sliderImage.height;
