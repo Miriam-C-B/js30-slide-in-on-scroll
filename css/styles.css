@@ -37,18 +37,20 @@ html {
   }
 
   .slide-in {
-    opacity: 0;
+    opacity: 0; /*this bit makes images invisible by default */
     transition: all .5s;
   }
 
   .align-left.slide-in {
     transform: translateX(-30%) scale(0.95);
-  }
+  } /*the translateX(-30%) moves them a bit to the side */
   
   .align-right.slide-in {
     transform: translateX(30%) scale(0.95);
   }
 
+  /*This bit happens will be activated when you scroll down. Opacity: 1 means that the images become visible; transform moves them into place and scale
+  brings them to their actual size */
   .slide-in.active {
     opacity: 1;
     transform: translateX(0%) scale(1);
